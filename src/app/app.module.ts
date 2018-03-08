@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ShoppinglistPage } from "../pages/shoppinglist/shoppinglist";
 import { RecipesPage } from "../pages/recipes/recipes"
+import { AddrecipePage } from "../pages/addrecipe/addrecipe"
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     ShoppinglistPage,
-    RecipesPage
+    RecipesPage,
+    AddrecipePage,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { RecipesPage } from "../pages/recipes/recipes"
     MyApp,
     TabsPage,
     ShoppinglistPage,
-    RecipesPage
+    RecipesPage,
+    AddrecipePage,
   ],
   providers: [
     StatusBar,
