@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AddrecipePage } from "../addrecipe/addrecipe"
-
 
 @Component({
-  selector: 'page-recipes',
-  templateUrl: 'recipes.html',
+  selector: 'page-addrecipe',
+  templateUrl: 'addrecipe.html',
 })
-export class RecipesPage {
+export class AddrecipePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  onAddRecipes(){
-    this.navCtrl.push(AddrecipePage)
-  }
+
 }
