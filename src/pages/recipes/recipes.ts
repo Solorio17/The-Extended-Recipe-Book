@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AddrecipePage } from "../addrecipe/addrecipe"
+import { EditRecipePage } from "../edit-recipe/edit-recipe";
 
 
 @Component({
@@ -12,7 +12,7 @@ export class RecipesPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  onAddRecipes(){
-    this.navCtrl.push(AddrecipePage)
+  onAddRecipe(){
+    this.navCtrl.push(EditRecipePage)
   }
 }
