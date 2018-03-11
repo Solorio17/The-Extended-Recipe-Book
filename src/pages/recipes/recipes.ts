@@ -13,6 +13,6 @@ export class RecipesPage {
   }
 
   onAddRecipe(){
-    this.navCtrl.push(EditRecipePage)
+    this.navCtrl.push(EditRecipePage, {mode: 'New'})
   }
 }
