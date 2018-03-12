@@ -9,7 +9,7 @@ import { Recipe } from "../../models/recipe";
 })
 export class RecipePage implements OnInit{
 
-  recipe: Recipe[];
+  recipe: Recipe;
   index: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
