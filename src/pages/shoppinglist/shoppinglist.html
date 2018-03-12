@@ -27,7 +27,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let item of listItems, let i = index">
       <ion-item id="color">
-        <h1>{{item.name}}: {{item.amount}}</h1>
+        <h2>{{item.name}}: {{item.amount}}</h2>
       </ion-item>
       <ion-item-options>
         <button ion-button color="danger" (click)="onCheckItem(i)"><ion-icon name='trash'></ion-icon>Delete</button>
