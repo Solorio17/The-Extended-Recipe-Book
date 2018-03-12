@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavParams, ActionSheetController, AlertController, ToastController, NavController} from 'ionic-angular';
 import { FormGroup, FormControl, Validators, FormArray } from "@angular/forms";
 import { RecipesService } from "../../services/recipes"
-import { Recipe} from "../../models/recipe"
 
 @Component({
   selector: 'page-edit-recipe',
