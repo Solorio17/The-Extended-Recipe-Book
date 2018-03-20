@@ -35,13 +35,12 @@ export class EditRecipePage implements OnInit{
       })
     }
     if(this.mode == "Edit"){
-      this.recipesService.updateRecipe(this.index, value.title, value.description, value.difficulty, ingredients);
+      this.recipesService.updateRecipe(this.index, value.title, value.description, value.difficulty, value.ingredients);
     } else{
       this.recipesService.addRecipe(value.title, value.description, value.difficulty, value.ingredients);
     }
       this.recipeForm.reset();
       this.navCtrl.popToRoot();
-      console.log(value.ingredients)
   }
 
   onManageIngredients(){

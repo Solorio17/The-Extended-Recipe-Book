@@ -27,10 +27,6 @@ export class RecipePage implements OnInit{
     this.navCtrl.push(EditRecipePage, {mode: 'Edit', recipe: this.recipe, index: this.index})
   }
 
-  onAddIngredients(){
-    this.slService.addItems(this.recipe.ingredients);
-  }
-
   onDeleteRecipe(){
     this.recipesService.removeRecipe(this.index);
     this.navCtrl.popToRoot();
